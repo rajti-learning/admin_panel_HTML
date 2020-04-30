@@ -1,0 +1,46 @@
+/* LEFT SIDEBAR */
+
+.block__sidebar {
+    background-color: #191919;
+    width: 188px;
+    /*height: 1746px; */
+}
+
+.component--logo {
+    background-color: #191919;
+    width: 86px;
+    height: 23px;
+}
+
+.component--hamburger {
+    background-color: #191919;
+    width: 18px;
+    height: 16px;
+}
+
+.component--sidebar-header {
+    background-color: #191919;
+    height: 61px;
+    width: 188px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    padding: 0 14px;
+    fill: #999999;
+}
+
+.component--sidebar-option {
+    background-color: #191919;
+    height: 40px;
+    width: 188px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    COLOR: #999999;
+}
+
