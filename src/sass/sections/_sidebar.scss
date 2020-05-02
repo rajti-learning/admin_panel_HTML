@@ -1,0 +1,116 @@
+.component--sidebar_header {
+    display: flex;
+    height: 65px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.component--sidebar_image {
+    object-fit: cover;  
+}
+
+.component--sidebar_header_logo {
+    width: 86px;
+    height: 23px;
+}
+
+.component--sidebar_header_hamburger {
+    width: 20px;
+    height: 20px;
+}
+
+.component--sidebar_body {
+    width: 100%;
+    color: $color-text;
+}
+
+.component--sidebar_body::after {
+    position: absolute;
+    content: '';
+    background: $color-text;
+    width: 100%;
+    height: 1px;
+}
+
+.component--sidebar_option {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.component--sidebar_option::after {
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 5px;
+    height: 100%;
+}
+
+.component--sidebar_option:hover {
+    background: $color-lighten-dark;
+    color: $color-main;
+    transition: all 0.5s;
+
+    .component--sidebar_icon {
+        fill: $color-main;
+        transition: all 0.5s;
+    }
+    
+    &::after {
+        background: $color-effect;
+        transition: all 0.5s;
+    }
+}
+
+.component--sidebar_icon {
+    margin: 0 22px;
+    width: 20px;
+    height: 20px;
+    fill: $color-text; 
+}
+
+.component--sidebar_footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-text;
+    text-align: center;
+}
+
+.component--sidebar_footer_title {
+    flex: 0 0 100%;
+    font-weight: $font-bold;
+}
+
+.component--sidebar_footer_row_wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: $color-link;
+}
+
+.component--sidebar_photobox {
+    margin: 0 22px;
+    width: 50px;
+    height: 50px;   
+}
+
+.component--sidebar_photobox::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $color-available;
+    left: 60px;
+}
+
+.component--sidebar_photo {
+    object-fit: cover;
+    border-radius: 50%;    
+}
+
