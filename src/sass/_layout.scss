@@ -12,6 +12,7 @@ body {
     width: 200px;
     height: 100vh;  
     background: $color-dark;
+    z-index: 1;
 
     img {
         width: 100%;
@@ -23,10 +24,9 @@ body {
 
 .section--topbar {
     position: fixed;
-    display: flex;
     width: 100vw;
     height: 65px;
-    left: 200px;
+    //left: 200px;
     background: $color-main;
 }
 
