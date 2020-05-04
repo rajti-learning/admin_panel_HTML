@@ -18,6 +18,7 @@
 .component--sidebar_header_hamburger {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .component--sidebar_body {
@@ -75,6 +76,7 @@
 
 .component--sidebar_footer {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     color: $color-text;
     text-align: center;
@@ -113,4 +115,51 @@
     object-fit: cover;
     border-radius: 50%;    
 }
+
+.component--sidebar_topbar {
+    display: none;
+    width: 100%;
+    color: $color-text;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.component--sidebar_alert {
+    position: relative;
+}
+
+.component--sidebar_alert::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $color-effect;
+    top: 8px;
+    left: 33px;
+}
+
+.component--sidebar_user_header {
+    font-weight: $font-bold;
+    margin: 20px 0 0 0;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+    .component--sidebar_topbar {
+        display: block;
+    }
+
+    .component--sidebar_footer::after {
+        position: absolute;
+        content: '';
+        background: $color-text;
+        width: 100%;
+        height: 1px;
+        top: 110px;
+    }
+
+}
+
 
