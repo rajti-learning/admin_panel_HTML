@@ -1,9 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background: $color-light;
 }
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;    
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 /*SIDEBAR*/
 
@@ -45,11 +60,13 @@ body {
 }
 
 .section_content {
-    display: flex;
+    //display: flex;
     margin: 10px;
     height: 100%;
     background: $color-main;
 }
+
+
 
 /* MEDIA */
 
@@ -73,4 +90,20 @@ body {
     .section_wrapper {
         margin-left: 0;
     }
+}
+
+@media(max-width: 767px) {
+    @include grid('sm');
+}
+  
+@media(min-width: 768px) {
+    @include grid('md');
+}
+  
+@media(min-width: 992px) {
+    @include grid('lg');
+}
+  
+@media(min-width: 1200px) {
+    @include grid('xl');
 }
