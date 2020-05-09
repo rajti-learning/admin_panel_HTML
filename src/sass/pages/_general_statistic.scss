@@ -9,6 +9,8 @@
     border-bottom: 1px solid $color-text;
 }
 
+/* DATE PICKER */
+
 .general--date_picker {
     justify-content: center;
     align-items: center;
@@ -27,7 +29,7 @@
     fill: $color-main;
 }
 
-button {
+.refresh {
     padding: 10px 10px;
     cursor: pointer;
     background: $color-button;
@@ -35,13 +37,57 @@ button {
     border-radius: 4px;
 }
 
-input[type="text"] {
+.date_picker {
     padding: 5px 10px;
     font-size: 16px;
     text-align: center;
     border: 1px solid $color-text;
     outline: none;
 }
+
+/* CHART */
+.table {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table_row {
+    width: 70%;
+    justify-content: space-between;
+
+    .table_cell {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-text;
+        padding-top: 10px;
+        padding-bottom: 5px;    
+    }   
+}
+
+.table_category {
+    @include paragraph;
+    margin: 0;
+}   
+
+.table_number {
+    color: $color-black;
+}
+
+.chart_title {
+    @include paragraph;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chart_container {
+    position: relative;
+}
+
+
 
 /* MEDIA */
 
@@ -54,10 +100,14 @@ input[type="text"] {
         padding-bottom: 15px;
     }
 
-    input[type="text"] {
+    .date_picker {
         font-size: 12px;
         width: 80%;
         height: 80%;
+    }
+
+    ::placeholder {
+        font-size: 12px;
     }
 
     .general--icon {
@@ -65,8 +115,22 @@ input[type="text"] {
         height: 15px;
     }
     
-    button {
+    .refresh {
         padding: 4px 4px;
+    }
+
+    .table_category {
+        font-size: 15px
+    }
+    
+    .chart_title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table_cell {
+        flex: 0 0 100%;
     }
 }
 
