@@ -9,6 +9,11 @@
     border-bottom: 1px solid $color-text;
 }
 
+.general--icon {
+    @include icon;
+    fill: $color-main;
+}
+
 /* DATE PICKER */
 
 .general--date_picker {
@@ -23,18 +28,10 @@
     flex-wrap: nowrap;
 }
 
-.general--icon {
-    width: 20px;
-    height: 20px;
-    fill: $color-main;
-}
+
 
 .refresh {
-    padding: 10px 10px;
-    cursor: pointer;
-    background: $color-button;
-    border: none;
-    border-radius: 4px;
+    @include basic_button;
 }
 
 .date_picker {
@@ -46,8 +43,8 @@
 }
 
 /* CHART */
-.table {
-    margin-top: 50px;
+.general--table {
+    margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -83,10 +80,72 @@
     text-align: center;
 }
 
-.chart_container {
-    position: relative;
+.general--chart {
+    padding-bottom: 30px;
 }
 
+/* LINKS */
+
+.add_link_button {
+    @include basic_button;
+}
+
+.general--links_button {
+    margin: 20px;
+    justify-content: center;
+}
+
+.general--links_button_last {
+    padding-bottom: 20px;
+}
+
+.general--links_icon {
+    @include icon;
+    fill: $color-text;
+
+    &:hover {
+        fill: $color-effect;
+        transition: all 0.5s;
+    }
+}
+
+.general--link_row {
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid $color-text;
+    padding: 20px 0;
+
+    &:hover {
+        background-color: $color-lighten-link;
+        transition: all 0.5s;
+    }
+}
+
+.general--link_row_last {
+    border-bottom: 1px solid $color-text;
+}
+
+.general--link_icons_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.general--link_title {
+    @include paragraph;
+    margin: 0;
+    flex: 1;
+}
+
+.general--link_single {
+    @include link;
+    cursor: pointer;
+    flex: 1;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 
 /* MEDIA */
@@ -126,11 +185,58 @@
     .chart_title {
         font-size: 15px;
     }
+
+    .general--link_title {
+        font-size: 15px;
+    }
+
+    .general--links_button {
+        margin: 10px;
+    }
+
+    .general--links_button_last  {
+        padding-bottom: 0px;
+    }
+
+    .general--link_single {
+        font-size: 15px;
+    }
+
+    .general--links_icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .add_link_button {
+        padding: 7px 7px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
     .table_cell {
         flex: 0 0 100%;
+    }
+
+    .general--link_row {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .general--link_title {
+        flex: 0 0 100%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .general--link_single {
+        flex: 0 0 80%;
+    }
+
+    .link-icons-container {
+        flex: 0 0 20%;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 

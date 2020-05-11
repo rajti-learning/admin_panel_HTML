@@ -6,6 +6,7 @@ $color-main: #ffffff;
 $color-text: #979797;
 $color-available: #04AE00;
 $color-link: #56819f;
+$color-lighten-link: lighten($color-link, 40%);
 $color-effect: #ffa200;
 $color-button: #f58220;
 $color-black: #000000;

@@ -13,12 +13,17 @@ body {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;    
-  }
+}
 
-  .row {
+.row {
     display: flex;
     flex-wrap: wrap;
-  }
+}
+
+.exit_modal_button {
+    cursor: pointer;
+}
+
 
 /*SIDEBAR*/
 
@@ -28,7 +33,11 @@ body {
     background: $color-dark;
     z-index: 1;
     overflow-y: auto;
-    height: 100%;  
+    height: 100%;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
     
     img {
         width: 100%;
@@ -61,7 +70,6 @@ body {
 
 .section_content {
     margin: 10px;
-    height: 100%;
     background: $color-main;
 }
 

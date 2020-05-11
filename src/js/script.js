@@ -17,7 +17,7 @@ function datePicker() {
 }
 
 function buttonBlocker() {
-    document.querySelector('.refresh').addEventListener('click', function(event) {
+    document.querySelector('.block').addEventListener('click', function(event) {
         event.preventDefault();
     });
 }
@@ -68,6 +68,49 @@ function chartDrawer() {
     });
 }
 
+function modalOperator() {
+    function closeModal() {
+        document.getElementById('overlay').classList.remove('show_modal');
+    }
+    
+    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+          event.preventDefault();
+          closeModal();
+        })
+    });
+    
+    document.querySelector('#overlay').addEventListener('click', function(event) {
+        if(event.target === this) {
+          closeModal();
+        }
+    });
+    
+    document.addEventListener('keyup', function(event) {
+        if(event.keyCode === 27) {
+          closeModal();
+        }
+    });
+
+    function openModal(modal) {
+        document.querySelectorAll('#overlay > *').forEach(function(modal) {
+          modal.classList.remove('show_modal');
+        });
+        document.querySelector('#overlay').classList.add('show_modal');
+        document.querySelector(modal).classList.add('show_modal');
+    }
+    
+    const exits = document.querySelectorAll('.exit_modal_button');
+    
+    for (let exit of exits) {
+        exit.addEventListener('click', function(){
+            openModal('#exitModal');
+        });
+    }
+}
+
+
 datePicker();
 buttonBlocker();
 chartDrawer();
+modalOperator();
