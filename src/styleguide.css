@@ -1,3 +1,4 @@
+/* GENERALS */
 .styleguide_header_wrapper {
     background-color: #333333;
     width: 100%;
@@ -9,6 +10,12 @@
 
 .styleguide_header {
     margin-bottom: 0;
+}
+
+code {
+    overflow-wrap: anywhere;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .styleguide_section {
@@ -26,25 +33,19 @@
     text-decoration: underline;
 }
 
+.last_section {
+    margin-bottom: 20px;
+}
+
 /*TYPOGRAPHY */
-
-
-.styleguide_bold_font {
-    font-weight: 700;
-}
-
 .styleguide_typography_option {
-    flex: 0 0 25%;
-}
-
-.styleguide_typography_option code {
     flex: 0 0 100%;
-    height: 70%;
+    padding-bottom: 20px;
 }
 
 .box-title {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px 0;
     text-align: center;
 }
@@ -113,15 +114,11 @@
 }
 
 .buttons_wrapper {
-    flex: 0 0 33.333%;
+    flex: 0 0 100%;
 }
 
 .forms_wrapper {
-    flex: 0 0 33.333%;
-}
-
-.icon_wrapper {
-    flex: 0 0 33.333%;
+    flex: 0 0 100%;
 }
 
 .button {
@@ -136,6 +133,10 @@
 
 /* ICONS */
 
+.icon_wrapper {
+    flex: 0 0 100%;
+}
+
 .icon {
     flex: 0 0 50%;
     text-align: center;
@@ -148,66 +149,16 @@
     margin: 10px auto;
 }
 
-.pseudoelement_block {
-    margin-bottom: 10px;
-    flex: 0 0 100%;
-    position: relative;
-    width: 20px;
-    height: 20px;  
-}
-
-.pseudoelement_block::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    top: 21px;
-    left: 140px;
-    background-color: #ffa200;
-}
-
-.last_section {
-    margin-bottom: 20px;
-}
-
+/* MEDIA */
 @media (max-width: 425px) {
-    .styleguide_typography_option {
-        flex: 0 0 100%;
-    }
-
     .styleguide_colorbox {
         flex: 0 0 33.333%;
     }
-
-    .buttons_wrapper {
-        flex: 0 0 100%;
-    }
-    
-    .forms_wrapper {
-        flex: 0 0 100%;
-    }
 }
 
-@media (max-width: 768px) {
-    .styleguide_typography_option {
-        flex: 0 0 50%;
-    }
-
+@media (min-width: 426px) and (max-width: 768px) {
     .styleguide_colorbox {
         flex: 0 0 25%;
-    }
-
-    .buttons_wrapper {
-        flex: 0 0 50%;
-    }
-    
-    .forms_wrapper {
-        flex: 0 0 50%;
-    }
-    
-    .icon_wrapper {
-        flex: 0 0 100%;
     }
 }
 

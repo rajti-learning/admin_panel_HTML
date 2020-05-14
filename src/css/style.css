@@ -348,11 +348,6 @@ template {
   box-sizing: border-box;
 }
 
-.active {
-  display: -ms-flexbox;
-  display: flex;
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -1018,6 +1013,7 @@ body {
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -1252,6 +1248,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .general--section_title {
+    font-size: 15px;
+  }
   .table_cell {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
