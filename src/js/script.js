@@ -1,11 +1,8 @@
 function toggleMenu () {
-    document.querySelector('.section--sidebar').classList.toggle('show');
+    document.querySelector('.hamburger_button').addEventListener('click', function(event){
+        document.querySelector('.section--sidebar').classList.toggle('show');
+    });  
 }
-
-document.querySelector('.hamburger_button').addEventListener('click', function(event){
-    event.preventDefault();
-    toggleMenu();
-});
 
 function datePicker() {
     const dataField = document.querySelector('.date_picker');
@@ -109,7 +106,7 @@ function modalOperator() {
     }
 }
 
-
+toggleMenu();
 datePicker();
 buttonBlocker();
 chartDrawer();

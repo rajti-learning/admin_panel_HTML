@@ -2,112 +2,137 @@
 <html lang="en">
     <head>  
         <title>Styleguide</title>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="styleguide.css">
     </head>
     <body>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-        <ul>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        </ul>
-        <ol>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        </ol>
-        <br><br><br>
-        <h2>LEFT SIDEBAR</h2>
-        <h3>Sidebar header</h3>
-        <p>Logo</p>
-        <div class="component--logo">
-            <img src="images/logo.png">
-        </div>
-        <p>Hamburger</p>
-        <div class="component--hamburger">
-            <img src="images/hamburger.png">
-        </div>
-        <p>General view</p>
-        <div class="component--sidebar-header">
-            <img src="images/logo.png">
-            <img src="images/hamburger.png">
-        </div>
-
+        <header class="styleguide_header_wrapper">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="styleguide_header">Styleguide</h1>
+        </header>
+        <div class="container-fluid">
+            <section class="styleguide_section">
+                <h2 class="styleguide_section_title">Typography</h2>
+                <div class="styleguide_typography_option">
+                    <p class="box-title">Font normal</p>
+                </div>
+                <div class="styleguide_typography_option">
+                    <p class="styleguide_bold_font box-title">Font bold</p>
+                    <code>font-weight: 700</code>
+                </div>
+                <div class="styleguide_typography_option">
+                    <p class="table_category box-title">Paragraph</p>
+                    <code>
+                        font-size: 20px;<br>
+                        color: #979797;<br>
+                        font-weight: 700;
+                    </code>
+                </div>
+                <div class="styleguide_typography_option">
+                    <a class="general--link_single box-title">Link</a>
+                    <code>
+                        font-size: 20px;
+                        color: $color-link;<br>
+                        cursor: pointer;
+                    </code>
+                </div>
+            </section>
         
-        <h3>Sidebar body</h3>
-        <p>General</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/general.svg">
-            <p>General</p>  
-        </div>
-        <p>Details</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/details.svg">
-            <p>Details</p>  
-        </div>
-        <p>Links</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/links.svg">
-            <p>Links</p>  
-        </div>
-        <p>Banners</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/banners.svg">
-            <p>Banners</p>  
-        </div>
-        <p>Personal data</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/personaldata.svg">
-            <p>Personal data</p>  
-        </div>
-        <p>Payout</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/payout.svg">
-            <p>Payout</p>  
-        </div>
-        <p>Postback</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/postback.svg">
-            <p>Postback</p>  
-        </div>
+            <section class="styleguide_section">
+                <h2 class="styleguide_section_title">Colors</h2>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color1"></div>
+                    <code>#f5f5f2</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color2"></div>
+                    <code>#333333</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color3"></div>
+                    <code>#666666</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color4"></div>
+                    <code>#ffffff</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color5"></div>
+                    <code>#979797</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color6"></div>
+                    <code>#04AE00</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color7"></div>
+                    <code>#56819f</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color8"></div>
+                    <code>#d7e2ea</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color9"></div>
+                    <code>#ffa200</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color10"></div>
+                    <code>#f58220</code>
+                </div>
+                <div class="styleguide_colorbox">
+                    <div class="colorbox color11"></div>
+                    <code>#000000</code>
+                </div>
+            </section>
+         
+            <section class="styleguide_section buttons_forms_wrapper last_section">
+                <div class="buttons_wrapper">
+                    <h2 class="styleguide_section_title">Buttons</h2>
+                    <div class="button_container">
+                        <button class="add_link_button button" type="submit">Button</button>
+                        <code>
+                            padding: 10px 10px; <br>
+                            cursor: pointer; <br>
+                            background: #f58220; <br>
+                            border: none; <br>
+                            border-radius: 4px; <br>
+                            color: #ffffff;
+                        </code>
+                    </div>
+                </div>
+                <div class="forms_wrapper">
+                    <h2 class="styleguide_section_title">Forms</h2>
+                    <div class="form_container">
+                        <input class="date_picker input_field" type="text" name="date" placeholder="Pick a date">
+                        <code>
+                            padding: 5px 10px; <br>
+                            font-size: 16px; <br>
+                            text-align: center; <br>
+                            border: 1px solid $color-text; <br>
+                            outline: none;
+                        </code>
+                    </div>
+                </div>
+                <div class="icon_wrapper">
+                    <h2 class="styleguide_section_title">Icons</h2>
+                    <div class="icon_container">
+                        <svg class="component--sidebar_icon styleguide_icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+                            <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
+                            L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"
+                            />
+                        </svg>
+                        <code>
+                            margin: 0 22px; <br>
+                            width: 20px; <br>
+                            height: 20px; <br>
+                            fill: $color-text; <br>
+                        </code>
+                    </div>  
+                </div>
+            </section>
 
-
-        <p>General view</p>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/general.svg">
-            <p>General</p>  
         </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/details.svg">
-            <p>Details</p>  
-        </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/links.svg">
-            <p>Links</p>  
-        </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/banners.svg">
-            <p>Banners</p>  
-        </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/personaldata.svg">
-            <p>Personal data</p>  
-        </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/payout.svg">
-            <p>Payout</p>  
-        </div>
-        <div class="component--sidebar-option">
-            <img class="icon" src="images/postback.svg">
-            <p>Postback</p>  
-        </div>
-
     </body>
 </html>

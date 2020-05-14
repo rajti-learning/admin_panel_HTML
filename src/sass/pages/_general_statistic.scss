@@ -214,6 +214,10 @@
 }
 
 @media (max-width: 768px) {
+    .general--section_title {
+        font-size: 15px;
+    }
+
     .table_cell {
         flex: 0 0 100%;
     }
