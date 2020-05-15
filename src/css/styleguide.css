@@ -16,6 +16,15 @@ code {
     overflow-wrap: anywhere;
     display: block;
     margin-bottom: 5px;
+    font-size: 12px;
+    background-color: white;
+    box-shadow: 2px 3px grey;
+    width: 80%;
+    margin: 0 auto;
+}
+
+pre {
+    white-space: pre-wrap;
 }
 
 .styleguide_section {
